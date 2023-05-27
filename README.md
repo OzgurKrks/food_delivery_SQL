@@ -29,27 +29,28 @@ This project utilizes the following dependencies:
 
 ## Database
 This project utilizes the following tables in the database:
-TABLE users
-+----+----------+----------------------+------------------+
-| id | username |        email         |     password     |
-+----+----------+----------------------+------------------+
-|  1 |  user1   | user1@example.com    |   hashedpass1    |
-|  2 |  user2   | user2@example.com    |   hashedpass2    |
-|  3 |  user3   | user3@example.com    |   hashedpass3    |
-+----+----------+----------------------+------------------+
-TABLE foods
-+----+-------------+-------+
-| id |    name     | price |
-+----+-------------+-------+
-|  1 |   Food A    |   10  |
-|  2 |   Food B    |   15  |
-|  3 |   Food C    |   20  |
-+----+-------------+-------+
-TABLE orders
-+----+---------+---------+
+#### TABLE users
+
+| id | username | email             | password    |
+|----|----------|-------------------|-------------|
+| 1  | user1    | user1@example.com | hashedpass1 |
+| 2  | user2    | user2@example.com | hashedpass2 |
+| 3  | user3    | user3@example.com | hashedpass3 |
+
+#### TABLE foods
+
+| id | name   | price |
+|----|--------|-------|
+| 1  | Food A | 10    |
+| 2  | Food B | 15    |
+| 3  | Food C | 20    |
+
+#### TABLE orders
+
 | id | user_id | food_id |
-+----+---------+---------+
-|  1 |    1    |    2    |
-|  2 |    2    |    1    |
-|  3 |    1    |    3    |
-+----+---------+---------+
+|----|---------|---------|
+| 1  | 1       | 2       |
+| 2  | 2       | 1       |
+| 3  | 1       | 3       |
+
+
